@@ -1,0 +1,38 @@
+/* bugSolution.css */
+
+/* Correct usage of calc() */
+.correct-width {
+  width: calc(100% - 10px);
+}
+
+.correct-height {
+  height: calc(20px + 10%);
+}
+
+.correct-multiplication {
+  width: calc(50% * 2);
+}
+
+.correct-mixed-units {
+  width: calc(100px + 20%); /*Valid unit combination*/
+}
+
+/* Incorrect usage of calc() - these are examples of the errors demonstrated */
+.incorrect-width {
+  /* Missing space */
+  width: calc(100%-10px);
+}
+
+.incorrect-height {
+  /* Missing multiplication sign */
+  height: calc(20px + 10%);
+}
+
+.incorrect-multiplication {
+  width:calc(50% *2);
+}
+
+.incorrect-mixed-units {
+  /* Potentially problematic unit combination - consider the context*/
+  width: calc(100px + 10em);
+} 
